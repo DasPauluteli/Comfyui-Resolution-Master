@@ -713,6 +713,8 @@ export const drawingMethods = {
             const pixels = this.widthWidget.value * this.heightWidget.value;
             const model = pixels < 600000 ? "480p" : "720p";
             return `💡 WAN Mode: Suggesting ${model} model | Round to: 16px | Resolution range: 320p-820p`;
+        } else if (category === "Krea 2 Turbo" || category === "Krea 2 RAW") {
+            return "\u{1F4A1} Krea 2 Mode: Uses the closest Krea 2 preset size (multiples of 16).";
         } else if (category === "HiDream Dev") {
             return "💡 HiDream Dev: Uses the closest HiDream Dev preset size.";
         } else if (category === "Qwen-Image") {
